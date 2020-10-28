@@ -1,10 +1,13 @@
 Rails.application.routes.draw do
-  get 'authenticationrails/g'
-  get 'authenticationrails/controller'
-  get 'authenticationrails/Authentication'
-  resources  :users, :doctors
-
-  post 'signup', to: 'users#create'
+  concern :api_base do
+    resources :doctors, :appointments
+  end
+  namespace :v1 do
+    concerns :api_base
+  end
+  resources :users, only:  :create
   post 'auth/login', to: 'authentication#authenticate'
+  post 'signup', to: 'users#create'
+  root to: 'doctors#index'
 
 end
