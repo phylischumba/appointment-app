@@ -4,10 +4,9 @@ RSpec.describe 'Users API', type: :request do
   let(:user) { build(:user) }
   let(:headers) { valid_headers.except('Authorization') }
   let(:valid_attributes) do
-    attributes_for(:user, password_confirmation: user.password)
+    attributes_for(:user, password_digest: user.password)
   end
 
-  # User signup test suite
   describe 'POST /signup' do
     context 'when valid request' do
       before { post '/signup', params: valid_attributes.to_json, headers: headers }
@@ -17,7 +16,7 @@ RSpec.describe 'Users API', type: :request do
       end
 
       it 'returns success message' do
-        expect(json['message']).to match(/Account created successfully/)
+        expect(message).to match(/Account created successfully/)
       end
 
       it 'returns an authentication token' do
@@ -34,8 +33,7 @@ RSpec.describe 'Users API', type: :request do
 
       it 'returns failure message' do
         expect(json['message'])
-          .to match(/Validation failed: Password can't be blank, Name can't be blank,
-                    Email can't be blank, Password digest can't be blank/)
+          .to match(/Validation failed: Name can't be blank, Email can't be blank, Email is invalid, Password digest can't be blank, Password can't be blank/)
       end
     end
   end
