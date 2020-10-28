@@ -1,5 +1,6 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :update, :destroy]
+  skip_before_action :authorize_request, only: :create
 
 # GET /users
 def index
@@ -37,7 +38,6 @@ private
     params.permit(
       :name, 
       :email,
-      :contact_number,
       :password,
       :password_confirmation
     )
