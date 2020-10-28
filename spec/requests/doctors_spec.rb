@@ -7,7 +7,6 @@ RSpec.describe 'Doctors', type: :request do
 
   # Test suite for GET /doctors
   describe 'GET /v1/doctors' do
-    # make HTTP get request before each example
     before { get '/v1/doctors', params: {}, headers: headers }
 
     it 'returns doctors' do
@@ -53,7 +52,7 @@ RSpec.describe 'Doctors', type: :request do
     # valid payload
     let(:valid_attributes) {
       { name: 'John Doe', specialization: 'Orthorpaedic',
-        practicing_from: 20140925, professional_statement: 'surgeon and consultant' }.to_json
+        practice_from: 20140925, professional_statement: 'surgeon and consultant' }.to_json
     }
 
     # before do
