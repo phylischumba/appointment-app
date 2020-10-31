@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   resources :users, only:  :create
   post 'auth/login', to: 'authentication#authenticate'
   post 'signup', to: 'users#create'
-  root to: 'doctors#index'
+  root to: 'v1/doctors#index'
 
 end
