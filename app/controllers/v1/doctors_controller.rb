@@ -38,7 +38,7 @@ class V1::DoctorsController < ApplicationController
     params.permit(
       :name,
       :specialization,
-      :practicing_from,
+      :practice_from,
       :professional_statement
     )
   end
