@@ -1,4 +1,4 @@
-class DoctorsController < ApplicationController
+class V1::DoctorsController < ApplicationController
   before_action :set_doctor, only: %i[show update destroy]
   skip_before_action :authorize_request, only: %i[index show]
 
