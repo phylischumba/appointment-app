@@ -10,40 +10,76 @@ Doctor.create(name: 'Jeff Denlea',
              specialization: 'Surgeon',
              professional_statement: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
              img: 'https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-             practice_from: 20-12-2018)
+             practice_from: '20-12-2018')
 
 Doctor.create(name: 'Jeff Denlea',
              specialization: 'Surgeon',
              professional_statement: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
              img: 'https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-             practice_from: 20-12-2018)
+             practice_from: '20-12-2018')
 
 Doctor.create(name: 'Jeff Denlea',
              specialization: 'Surgeon',
              professional_statement: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
              img: 'https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-             practice_from: 20-12-2018)
+             practice_from: '20-12-2018')
 
 Doctor.create(name: 'Jeff Denlea',
               specialization: 'Surgeon',
               professional_statement: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
               img: 'https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-              practice_from: 20-12-2018)
+              practice_from: '20-12-2018')
 
 
 Doctor.create(name: 'Jeff Denlea',
               specialization: 'Surgeon',
               professional_statement: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.',
               img: 'https://images.pexels.com/photos/3714743/pexels-photo-3714743.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-              practice_from: 20-12-2018)
+              practice_from: '20-12-2018')
 
-Appointment.create( location: 'London',
+Appointment.create( location: 'Mombasa',
                     doctor_id: Doctor.first,
                     created_at: '2020-06-08 16:51:35',
                     updated_at: '2020-06-08 16:51:35',
                     user_id: User.first,
                     date: '2020-07-05',
-                    time: '1  8:00:00',
+                    time: '15:00:00',
+)
+
+Appointment.create( location: 'Nairobi',
+                    doctor_id: Doctor.first,
+                    created_at: '2020-06-08 16:51:35',
+                    updated_at: '2020-06-08 16:51:35',
+                    user_id: User.first,
+                    date: '2020-07-05',
+                    time: '15:00:00',
+)
+
+Appointment.create( location: 'Eldoret',
+                    doctor_id: Doctor.first,
+                    created_at: '2020-06-08 16:51:35',
+                    updated_at: '2020-06-08 16:51:35',
+                    user_id: User.first,
+                    date: '2020-07-05',
+                    time: '15:00:00',
+)
+
+Appointment.create( location: 'Kampala',
+                    doctor_id: Doctor.first,
+                    created_at: '2020-06-08 16:51:35',
+                    updated_at: '2020-06-08 16:51:35',
+                    user_id: User.first,
+                    date: '2020-07-05',
+                    time: '15:00:00',
+)
+
+Appointment.create( location: 'Busia',
+                    doctor_id: Doctor.first,
+                    created_at: '2020-06-08 16:51:35',
+                    updated_at: '2020-06-08 16:51:35',
+                    user_id: User.first,
+                    date: '2020-07-05',
+                    time: '15:00:00',
 )
 
 Appointment.create( location: 'London',
@@ -52,14 +88,5 @@ Appointment.create( location: 'London',
                     updated_at: '2020-06-08 16:51:35',
                     user_id: User.first,
                     date: '2020-07-05',
-                    time: '1  8:00:00',
-)
-
-Appointment.create( location: 'London',
-                    doctor_id: Doctor.first,
-                    created_at: '2020-06-08 16:51:35',
-                    updated_at: '2020-06-08 16:51:35',
-                    user_id: User.first,
-                    date: '2020-07-05',
-                    time: '1  8:00:00',
+                    time: '15:00:00',
 )
