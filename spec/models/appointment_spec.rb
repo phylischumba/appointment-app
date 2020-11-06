@@ -14,4 +14,3 @@ RSpec.describe Appointment, type: :model do
     it { should belong_to(:doctor) }
   end
 end
-

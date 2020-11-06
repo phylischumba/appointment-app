@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe Doctor, type: :model do
   describe 'associations' do
     it { should have_many(:appointments).dependent(:destroy) }
-    it { should have_many(:users) } 
+    it { should have_many(:users) }
   end
 
   describe 'validations' do
