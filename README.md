@@ -4,6 +4,7 @@
 The purpose of the project is to create a Full-Stack app that works with a backend in Rails and a Frontend in React.
 This repo contains the backend project.
 It's a Rails API that is able to receive connections to:
+
 - Create and authenticate users
 - Get a list of available doctors
 - Make an appointment with a doctor
@@ -29,53 +30,52 @@ You can find the complete and functional app here:
 
 ## Usage
 
-### Login 
+### Login
 
-- Post: `https://appointments-api-majovanilla.herokuapp.com/auth/login`
+- Post: `https://wicked-goosebumps-55914.herokuapp.com/auth/login`
 - Parameters:
- ` { name: string,
-    email; string
+ `{ email: string,
+   password: string,
   }`
 
-### SignUp 
+### SignUp
 
-- Post: `https://appointments-api-majovanilla.herokuapp.com/signup`
+- Post: `https://wicked-goosebumps-55914.herokuapp.com/signup`
 - Parameters:
- ` { name: string,
+ `{name: string,
     email: string,
     password: string
   }`
 
-### Tutors 
+### Doctors
 
-- Get: `https://appointments-api-majovanilla.herokuapp.com/tutors`
+- Get: `https://wicked-goosebumps-55914.herokuapp.com/v1/doctors`
 - Headers:
  `{ Authorization: 'Bearer ${token}'`
 
-### Tutor
+### Doctor
 
-- Get: `https://appointments-api-majovanilla.herokuapp.com/tutors/${id}`
+- Get: `https://wicked-goosebumps-55914.herokuapp.com/v1/doctors/${id}`
 - Headers:
  `{ Authorization: 'Bearer ${token}'`
 
-### Appointment 
+### Appointment
 
-- Post: `https://appointments-api-majovanilla.herokuapp.com/appointment/new`
+- Post: `https://wicked-goosebumps-55914.herokuapp.com/appointment/new`
 - Parameters:
 `{
   location: string,
   date: date,
-  tutor_id: integer,
+  doctor_id: integer,
   }`
 - Headers:
  `{ Authorization: 'Bearer ${token}'`
 
 ### Appointments
 
-- Get: `https://appointments-api-majovanilla.herokuapp.com/appointments`
+- Get: `https://wicked-goosebumps-55914.herokuapp.com/v1/appointments`
 - Headers:
  `{ Authorization: 'Bearer ${token}'`
-
 
 ## Testing
 
@@ -83,22 +83,20 @@ You can find the complete and functional app here:
   This should also be done if you want to test the app in dev env, otherwise, it won't work.
 - Run `rspec` in your terminal (check that you are in the repo's folder) to run all the testing suite.
 
-
 ## Author
 
-👤 **majovanilla**
+👤 **Phylis Chepchumba**
 
-- Github: [@githubhandle](https://github.com/majovanilla)
-- Twitter: [@twitterhandle](https://twitter.com/MajoVanilla)
-- Linkedin: [linkedin](https://linkedin.com/majoreyesparroquin)
-
-
+- Github: [Phylis05](https://github.com/Phylis05)
+- Linkedin: [Phylis Chepchumba](https://linkedin.com/phylis-chepchumba)
+- Twitter: [phylis_chumbaa](https://twitter.com/phyl_chumba)
+- [Email](chumba.phyl@gmail.com)
 
 ## 🤝 Contributing
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](issues/).
+Feel free to check the [issues page](https://github.com/Phylis05/appointment-app/issues/).
 
 ## Show your support
 

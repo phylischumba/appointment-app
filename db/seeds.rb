@@ -82,7 +82,7 @@ Appointment.create( location: 'Busia',
                     time: '15:00:00',
 )
 
-Appointment.create( location: 'London',
+Appointment.create( location: 'Mombasa',
                     doctor_id: Doctor.first,
                     created_at: '2020-06-08 16:51:35',
                     updated_at: '2020-06-08 16:51:35',
