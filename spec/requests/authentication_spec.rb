@@ -1,13 +1,11 @@
 require 'rails_helper'
 
 RSpec.describe 'Authentications', type: :request do
-
   describe 'POST /auth/login' do
-
     let!(:user) { create(:user) }
 
     let(:headers) { valid_headers.except('Authorization') }
-   
+
     let(:valid_credentials) do
       {
         email: user.email,
@@ -23,7 +21,6 @@ RSpec.describe 'Authentications', type: :request do
 
     context 'When request is valid' do
       before { post '/auth/login', params: valid_credentials, headers: headers }
-
     end
 
     context 'When request is invalid' do
